@@ -2,20 +2,52 @@
 <head>
     <meta charset="UTF-8" />
     <title>Shirt-O-Mat</title>
+    <script src="../build/bundle.js" ></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
     body {background-color: #ACB0F2}
-    h1, h2 {
+    h1 {
         font-family: sans-serif;
         text-align: center;
     }
+
+    h2 {
+
+      text-align: left;
+        
+    }
+
+    
+
 </style>
 </head>
 <body>
     <h1 id="title">Shirt-O-Mat</h1>
-    <h2 id="c2a">Create your masterpiece!</h2>
-    <h3 id="first step">Choose your clothing:</h3>
-    <h4 id="scond step">Choose your color:</h4>
-    <h5 id="scond step">Choose some decoration:</h5>
+    <h1 id="c2a">Create your masterpiece!</h1>
+    <h2 id="first step">Choose your clothing:</h2>
+    <h2 id="first step">Choose your size:</h2>
+    <div class="select-wrapper">
+        <select>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+      </div>
+      <button id ="viewSizeChart" >Click here to see size chart</button>
+      <img id="size chart" src="../Größentabelle/Größentabelle.jpg" alt="">
+    <h2 id="first step">Choose your material:</h2>
+    <div class="select-wrapper">
+        <select>
+          <option>Baumwolle</option>
+          <option>Polyester</option>
+          <option>Elasthan</option>
+        </select>
+      </div>
+    <h2 id="scond step">Choose your color:</h2>
+    <h2 id="scond step">Choose some decoration:</h2>
 </body>
 </html>

@@ -5,32 +5,18 @@
     <script src="../build/bundle.js" ></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body {background-color: #ACB0F2}
-    h1 {
-        font-family: sans-serif;
-        text-align: center;
-    }
-    h2 {
-      text-align: left;  
-    }
-</style>
-</head>
+
 <body>
     <h1 id="title">Shirt-O-Mat</h1>
     <h1 id="c2a">Create your masterpiece!</h1>
     <h2 id="first step">Choose your clothing:</h2>
     <div class="container">
-      <button class="1" onClick="appear" ></button>
-      <button class="2" onClick="appear" ></button>
-      <button class="3" onClick="appear" ></button>
-      <button class="4" onClick="appear" ></button>
-      <button class="5" onClick="appear" ></button>
+      <object onclick="chooseTShirt" class="tshirt" type="image/svg+xml" data="../Bilder/tshirt.svg"></object>
+      <object class="shirt" type="image/svg+xml" data="../Bilder/shirts.svg"></object>
+      <object class="hoodie" type="image/svg+xml" data="../Bilder/hoodie.svg"></object>
+      <object class="sweater" type="image/svg+xml" data="../Bilder/sweater.svg"> </object>
     </div>
 
-    <div class="content">
-      
-    </div>
     <h2 id="first step">Choose your size:</h2>
     <div class="select-wrapper">
         <select>
@@ -43,7 +29,7 @@
         </select>
       </div>
       <button id ="viewSizeChart" >Click here to see size chart</button>
-      <img id="size chart" src="../Größentabelle/Größentabelle.jpg" alt="">
+      <img id="size chart" src="../Bilder/Größentabelle.jpg" alt="">
     <h2 id="first step">Choose your material:</h2>
     <div class="select-wrapper">
         <select>
@@ -53,6 +39,7 @@
         </select>
       </div>
     <h2 id="scond step">Choose your color:</h2>
+    <input id="color" type="color">
     <h2 id="scond step">Choose some decoration:</h2>
 </body>
 </html>

@@ -2,19 +2,19 @@
 <head>
     <meta charset="UTF-8" />
     <title>Shirt-O-Mat</title>
-    <script src="../build/bundle.js" ></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    
     <h1 id="title">Shirt-O-Mat</h1>
     <h1 id="c2a">Create your masterpiece!</h1>
     <h2 id="first step">Choose your clothing:</h2>
     <div class="container">
-      <object onclick="chooseTShirt" class="tshirt" type="image/svg+xml" data="../Bilder/tshirt.svg"></object>
-      <object class="shirt" type="image/svg+xml" data="../Bilder/shirts.svg"></object>
-      <object class="hoodie" type="image/svg+xml" data="../Bilder/hoodie.svg"></object>
-      <object class="sweater" type="image/svg+xml" data="../Bilder/sweater.svg"> </object>
+      <button type="button" style="width: 70px; height:70px; background:url(../Bilder/tshirt.jpg)" onclick="ausgabe()" id="tshirt" ></button> 
+      <button type="button" style="width: 70px; height:70px; background:url(../Bilder/shirt.jpg)" onclick="ausgabe()" id="shirt" ></button>
+      <button type="button" style="width: 70px; height:70px; background:url(../Bilder/hoodie.jpg)" onclick="ausgabe()" id="hoodie" ></button>  
+      <button type="button" style="width: 70px; height:70px; background:url(../Bilder/sweater.jpg)" onclick="ausgabe()" id="sweater" ></button>
     </div>
 
     <h2 id="first step">Choose your size:</h2>
@@ -42,5 +42,7 @@
     <input id="color" type="color">
     <h2 id="scond step">Choose some decoration:</h2>
     <div id="previewBox"></div>
+    <h2 id="price">You need to pay:</h2>
 </body>
+<script src="../build/index.js" ></script>
 </html>

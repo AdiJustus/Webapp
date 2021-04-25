@@ -1,12 +1,6 @@
-img {
+#sizechart {
   display: none;
   }
-
-body {
-    height: 100%;
-    /* background: linear-gradient(90deg, #2b2c7c 50%, white 50%); */
-}
-
 
 h1 {
       font-family: sans-serif;
@@ -27,3 +21,14 @@ height: 500px;
 width: 450px;
 }
 
+.button {
+
+border: none;
+
+}
+
+.Kleidung {
+
+color: red;
+
+}

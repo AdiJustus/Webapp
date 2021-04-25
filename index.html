@@ -11,10 +11,10 @@
     <h1 id="c2a">Create your masterpiece!</h1>
     <h2 id="first step">Choose your clothing:</h2>
     <div class="container">
-      <button type="button" style="width: 70px; height:70px; background:url(../Bilder/tshirt.jpg)" onclick="ausgabe()" id="tshirt" ></button> 
-      <button type="button" style="width: 70px; height:70px; background:url(../Bilder/shirt.jpg)" onclick="ausgabe()" id="shirt" ></button>
-      <button type="button" style="width: 70px; height:70px; background:url(../Bilder/hoodie.jpg)" onclick="ausgabe()" id="hoodie" ></button>  
-      <button type="button" style="width: 70px; height:70px; background:url(../Bilder/sweater.jpg)" onclick="ausgabe()" id="sweater" ></button>
+      <button class="button" type="button" style="width: 70px; height:65px; background:url(../Bilder/tshirt.jpg)" onclick="ausgabe('T-Shirt')" id="tshirt" ></button> 
+      <button class="button" type="button" style="width: 70px; height:65px; background:url(../Bilder/shirt.jpg)" onclick="ausgabe('Shirt')" id="shirt" ></button>
+      <button class="button" type="button" style="width: 65px; height:70px; background:url(../Bilder/hoodie.jpg)" onclick="ausgabe('Hoodie')" id="hoodie" ></button>  
+      <button class="button" type="button" style="width: 70px; height:70px; background:url(../Bilder/sweater.jpg)" onclick="ausgabe('Sweater')" id="sweater" ></button>
     </div>
 
     <h2 id="first step">Choose your size:</h2>
@@ -29,7 +29,7 @@
         </select>
       </div>
       <button id ="viewSizeChart" >Click here to see size chart</button>
-      <img id="size chart" src="../Bilder/Größentabelle.jpg" alt="">
+      <img id="sizechart" src="../Bilder/Größentabelle.jpg" alt="SizeChart">
     <h2 id="first step">Choose your material:</h2>
     <div class="select-wrapper">
         <select>
@@ -39,9 +39,10 @@
         </select>
       </div>
     <h2 id="scond step">Choose your color:</h2>
-    <input id="color" type="color">
+    <input id="colorMaker" type="color">
     <h2 id="scond step">Choose some decoration:</h2>
     <div id="previewBox"></div>
+    <h2 id="price">You selected:</h2>
     <h2 id="price">You need to pay:</h2>
 </body>
 <script src="../build/index.js" ></script>

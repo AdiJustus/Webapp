@@ -1,5 +1,8 @@
 let previewBox = document.getElementById("previewBox") as HTMLInputElement;
 const Kleidung = document.getElementsByClassName("Kleidung");
+const Tshirt = document.querySelector("#tshirt") as HTMLImageElement;
+const color = document.querySelector("#colorMaker") as HTMLInputElement;
+color.addEventListener("change", addColor);
 
 function ausgabe(ArtDerKleidung:string):void {
     console.log(ArtDerKleidung);
@@ -22,7 +25,6 @@ function ausgabe(ArtDerKleidung:string):void {
 }
 
 function addColor() {
-    Kleidung.style.color = document.querySelector("#colorMaker").value;
+    Tshirt.style.color = color.value;
 }
 
-}

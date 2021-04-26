@@ -2,6 +2,7 @@
   display: none;
   }
 
+
 h1 {
       font-family: sans-serif;
       text-align: center;
@@ -24,11 +25,5 @@ width: 450px;
 .button {
 
 border: none;
-
-}
-
-.Kleidung {
-
-color: red;
 
 }

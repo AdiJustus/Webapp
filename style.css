@@ -3,6 +3,7 @@
   }
 
 
+
 h1 {
       font-family: sans-serif;
       text-align: center;
@@ -16,11 +17,13 @@ object {
     width: 50px;
 }
 
-#previewBox {
+#previewBox, #previewBox2 {
 /*background-color: rgb(216, 216, 216);*/
+display:none;
 height: 500px;
 width: 450px;
 }
+
 
 .colorField {
 

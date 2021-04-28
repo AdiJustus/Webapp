@@ -9,6 +9,7 @@
     
     <h1 id="title">Shirt-O-Mat</h1>
     <h1 id="c2a">Create your masterpiece!</h1>
+  <div id="controls">
     <h2 id="first step">Choose your clothing:</h2>
     <div class="container">
       <img class="choice" src="../Bilder/tshirt.svg" onclick="ausgabe('T-Shirt')">
@@ -48,6 +49,9 @@
     <span id="yellow" class="colorField" onclick="changeColor('yellow');"></span>
     <span id="orange" class="colorField" onclick="changeColor('orange');"></span>
     <span id="purple" class="colorField" onclick="changeColor('purple');"></span>
+    <h2 id="price">You need to pay:</h2>
+  </div>
+  <div id="preview">
     <div id="previewBox">
       <svg version="1.1" id="i1" class="svgs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 407.7 407.7" style="enable-background:new 0 0 407.7 407.7;" xml:space="preserve">
@@ -98,8 +102,7 @@
 	C331.474,71.278,369.935,163.781,361.25,363.984z"/>
 </svg>
     </div>
-    <h2 id="price">You selected:</h2>
-    <h2 id="price">You need to pay:</h2>
+  </div>
 </body>
 <script src="../build/index.js" ></script>
 </html>

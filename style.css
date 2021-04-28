@@ -22,10 +22,17 @@ cursor: pointer;
 
 }
 
+select {
+
+  cursor: pointer;
+
+}
+
+
 .svgs {
 
-max-width: 400px;
-max-height: 400px;
+max-width: 300px;
+max-height: 300px;
 
 
 }
@@ -40,10 +47,14 @@ h2 {
   }
 
 #previewBox, #previewBox2, #previewBox3, #previewBox4 {
-
+  float: right;
   display: none;
   max-height: 500px;
   max-width: 500px;
+}
+
+.preview {
+right: 500px;
 
 }
 
@@ -53,6 +64,7 @@ h2 {
   width: 50px;
   border-radius: 50%;
   display: inline-block;
+  cursor: pointer;
   
 }
 

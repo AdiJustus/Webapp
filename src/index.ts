@@ -1,5 +1,6 @@
 let previewBox = document.getElementById("previewBox") as HTMLInputElement;
 const Kleidung = document.getElementsByClassName("Kleidung");
+const size = document.getElementsByClassName("sizeSelection");
 const Tshirt = document.querySelector("#tshirt") as SVGElement;
 const colorFields = document.querySelectorAll(".colorField") as unknown as Array<HTMLElement>;
 /*const enum Clothings {
@@ -9,7 +10,7 @@ const colorFields = document.querySelectorAll(".colorField") as unknown as Array
     pulli = 'Sweater'
     }
     */
- 
+let preisKleidung: number;
 
 var kleidung: string;
 
@@ -67,6 +68,7 @@ function ausgabe(ArtDerKleidung:string):void {
 
         const tshirt = document.querySelector("#previewBox") as HTMLElement;
         tshirt!.style.display = "inline";
+        preisKleidung = 10;
 
     }
 
@@ -74,6 +76,7 @@ function ausgabe(ArtDerKleidung:string):void {
 
         const shirt = document.querySelector("#previewBox2") as HTMLElement;
         shirt!.style.display = "inline";
+        preisKleidung = 20;
 
     }
 
@@ -81,14 +84,14 @@ function ausgabe(ArtDerKleidung:string):void {
 
         const hoodie = document.querySelector("#previewBox3") as HTMLElement;
         hoodie!.style.display = "inline";
-
+        preisKleidung = 30;
     }
 
     else if (ArtDerKleidung === 'Sweater') {
 
         const sweater = document.querySelector("#previewBox4") as HTMLElement;
         sweater!.style.display = "inline";
-
+        preisKleidung = 40;
     }
 }
 
@@ -100,6 +103,17 @@ function hideSizeChart() {
     document.getElementById("overlay")!.style.display = "none";
   }
 
+
+
+  function rabatt() {
+    preisKleidung = preisKleidung + 5;
+    console.log(preisKleidung);
+    
+  }
+
+  function extraKosten() {
+    preisKleidung +5;
+}
 
     
 

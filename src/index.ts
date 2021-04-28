@@ -2,6 +2,7 @@ let previewBox = document.getElementById("previewBox") as HTMLInputElement;
 const Kleidung = document.getElementsByClassName("Kleidung");
 const Tshirt = document.querySelector("#tshirt") as SVGElement;
 const colorFields = document.querySelectorAll(".colorField") as unknown as Array<HTMLElement>;
+
 var kleidung: string;
 
 function changeColor(color:string) {
@@ -86,4 +87,14 @@ function ausgabe(ArtDerKleidung:string):void {
     }
 }
 
+function showChart() {
+    const on = document.getElementById("overlay") as HTMLElement;
+on!.style.display = "block";
+
+}
+function hideChart() {
+    const on = document.getElementById("overlay") as HTMLElement;
+on!.style.display = "none";
+    
+    }
 

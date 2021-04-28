@@ -2,6 +2,14 @@ let previewBox = document.getElementById("previewBox") as HTMLInputElement;
 const Kleidung = document.getElementsByClassName("Kleidung");
 const Tshirt = document.querySelector("#tshirt") as SVGElement;
 const colorFields = document.querySelectorAll(".colorField") as unknown as Array<HTMLElement>;
+/*const enum Clothings {
+    tshirt = 'T-Shirt',
+    tshirt = 'T-Shirt',
+    hoodie = 'Hoodie',
+    pulli = 'Sweater'
+    }
+    */
+ 
 
 var kleidung: string;
 
@@ -66,7 +74,6 @@ function ausgabe(ArtDerKleidung:string):void {
 
         const shirt = document.querySelector("#previewBox2") as HTMLElement;
         shirt!.style.display = "inline";
-        console.log("Shirt");
 
     }
 
@@ -74,7 +81,6 @@ function ausgabe(ArtDerKleidung:string):void {
 
         const hoodie = document.querySelector("#previewBox3") as HTMLElement;
         hoodie!.style.display = "inline";
-        console.log("Hoodie");
 
     }
 
@@ -82,7 +88,6 @@ function ausgabe(ArtDerKleidung:string):void {
 
         const sweater = document.querySelector("#previewBox4") as HTMLElement;
         sweater!.style.display = "inline";
-        console.log("Sweater");
 
     }
 }

@@ -8,24 +8,25 @@
 <body>
     
     <h1 id="title">Shirt-O-Mat</h1>
-    <h1 id="c2a">Create your masterpiece!</h1>
   <div id="controls">
     <div id="choices">
-      <img class="choice" class="Kleidung" src="../Bilder/tshirt.svg" onclick="ausgabe('T-Shirt')">
-      <img class="choice" class="Kleidung" src="../Bilder/shirts.svg" onclick="ausgabe('Shirt')">
-      <img class="choice" class="Kleidung" src="../Bilder/hoodie.svg" onclick="ausgabe('Hoodie')">
-      <img class="choice" class="Kleidung" src="../Bilder/sweater.svg" onclick="ausgabe('Sweater')">
+      <img id="c1" class="choice" class="Kleidung" src="../Bilder/tshirt.svg" onclick="ausgabe('T-Shirt')">
+      <img id="c2" class="choice" class="Kleidung" src="../Bilder/shirts.svg" onclick="ausgabe('Shirt')">
+      <img id="c3" class="choice" class="Kleidung" src="../Bilder/hoodie.svg" onclick="ausgabe('Hoodie')">
+      <img id="c4" class="choice" class="Kleidung" src="../Bilder/sweater.svg" onclick="ausgabe('Sweater')">
+    </div>
+    <div id='example'>
+      Element to drag, resize, rotate
     </div>
 
-
-    <div class="select-wrapper">
+    <div id="sizeSelection">
         <select>
-          <option>XS</option>
-          <option>S</option>
-          <option>M</option>
-          <option>L</option>
-          <option>XL</option>
-          <option>XXL</option>
+          <option id="xs">XS</option>
+          <option id="s">S</option>
+          <option id="m">M</option>
+          <option id="l">L</option>
+          <option id="xl">XL</option>
+          <option id="xxl">XXL</option>
         </select>
       </div>
       <div id="overlay" onclick="hideSizeChart()">
@@ -34,20 +35,21 @@
       <div >
         <button id="sizeChartButton" onclick="viewSizeChart()">View our Size Chart</button>
       </div>
-    <div class="select-wrapper">
+    <div id="materialSelection">
         <select>
           <option>Baumwolle</option>
           <option>Polyester</option>
           <option>Elasthan</option>
         </select>
       </div>
-
+    <div class="colorFields"> 
     <span id="red" class="colorField" onclick="changeColor('navy');"></span>
     <span id="blue" class="colorField" onclick="changeColor('SlateGray');"></span>
     <span id="green" class="colorField" onclick="changeColor('rebeccapurple');"></span>
     <span id="yellow" class="colorField" onclick="changeColor('Indigo');"></span>
     <span id="orange" class="colorField" onclick="changeColor('orange');"></span>
     <span id="purple" class="colorField" onclick="changeColor('purple');"></span>
+  </div> 
     <h2 id="price">You need to pay:</h2>
   </div>
   <div id="preview">
@@ -103,5 +105,7 @@
     </div>
   </div>
 </body>
+
 <script src="../build/index.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable/lib/draggable.js"></script>
 </html>

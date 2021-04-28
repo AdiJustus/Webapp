@@ -87,14 +87,14 @@ function ausgabe(ArtDerKleidung:string):void {
     }
 }
 
-function showChart() {
-    const on = document.getElementById("overlay") as HTMLElement;
-on!.style.display = "block";
+function viewSizeChart() {
+    document.getElementById("overlay")!.style.display = "block";
+  }
+  
+function hideSizeChart() {
+    document.getElementById("overlay")!.style.display = "none";
+  }
 
-}
-function hideChart() {
-    const on = document.getElementById("overlay") as HTMLElement;
-on!.style.display = "none";
+
     
-    }
 

@@ -10,15 +10,14 @@
     <h1 id="title">Shirt-O-Mat</h1>
     <h1 id="c2a">Create your masterpiece!</h1>
   <div id="controls">
-    <h2 id="first step">Choose your clothing:</h2>
-    <div class="container">
-      <img class="choice" src="../Bilder/tshirt.svg" onclick="ausgabe('T-Shirt')">
-      <img class="choice" src="../Bilder/shirts.svg" onclick="ausgabe('Shirt')">
-      <img class="choice" src="../Bilder/hoodie.svg" onclick="ausgabe('Hoodie')">
-      <img class="choice" src="../Bilder/sweater.svg" onclick="ausgabe('Sweater')">
+    <div id="choices">
+      <img class="choice" class="Kleidung" src="../Bilder/tshirt.svg" onclick="ausgabe('T-Shirt')">
+      <img class="choice" class="Kleidung" src="../Bilder/shirts.svg" onclick="ausgabe('Shirt')">
+      <img class="choice" class="Kleidung" src="../Bilder/hoodie.svg" onclick="ausgabe('Hoodie')">
+      <img class="choice" class="Kleidung" src="../Bilder/sweater.svg" onclick="ausgabe('Sweater')">
     </div>
 
-    <h2 id="first step">Choose your size:</h2>
+
     <div class="select-wrapper">
         <select>
           <option>XS</option>
@@ -29,12 +28,12 @@
           <option>XXL</option>
         </select>
       </div>
-      <div id="overlay">
-        <img id="sizechart" src="../Bilder/Größentabelle.jpg" alt="SizeChart">
+      <div id="overlay" onclick="hideSizeChart()">
+      <img id="sizeChart" src="../Bilder/size_chart.jpg">
       </div>
-      <button id ="viewSizeChart" onclick="showChart" >Click here to see size chart</button>
-      
-    <h2 id="first step">Choose your material:</h2>
+      <div >
+        <button id="sizeChartButton" onclick="viewSizeChart()">View our Size Chart</button>
+      </div>
     <div class="select-wrapper">
         <select>
           <option>Baumwolle</option>
@@ -42,11 +41,11 @@
           <option>Elasthan</option>
         </select>
       </div>
-    <h2 id="scond step">Choose your color:</h2>
-    <span id="red" class="colorField" onclick="changeColor('red');"></span>
-    <span id="blue" class="colorField" onclick="changeColor('blue');"></span>
-    <span id="green" class="colorField" onclick="changeColor('green');"></span>
-    <span id="yellow" class="colorField" onclick="changeColor('yellow');"></span>
+
+    <span id="red" class="colorField" onclick="changeColor('navy');"></span>
+    <span id="blue" class="colorField" onclick="changeColor('SlateGray');"></span>
+    <span id="green" class="colorField" onclick="changeColor('rebeccapurple');"></span>
+    <span id="yellow" class="colorField" onclick="changeColor('Indigo');"></span>
     <span id="orange" class="colorField" onclick="changeColor('orange');"></span>
     <span id="purple" class="colorField" onclick="changeColor('purple');"></span>
     <h2 id="price">You need to pay:</h2>

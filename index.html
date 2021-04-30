@@ -17,24 +17,23 @@
     </div>
   
     <div id="sizeSelection">
-      <button onclick="rabatt()">XS</button>
-        <select>
-          <option id="xs" onclick="rabatt()">XS</option>
-          <option id="s">S</option>
-          <option id="m">M</option>
-          <option id="l">L</option>
-          <option id="xl">XL</option>
-          <option id="xxl">XXL</option>
+        <select id="sizeSelector" onchange="groesseAuswahl()">
+          <option >XS</option>
+          <option >S</option>
+          <option >M</option>
+          <option >L</option>
+          <option >XL</option>
+          <option >XXL</option>
         </select>
       </div>
-      <div id="overlay" onclick="hideSizeChart()">
+      <div id="overlay" onclick="viewSizeChart(false)">
       <img id="sizeChart" src="../Bilder/size_chart.jpg">
       </div>
       <div >
-        <button id="sizeChartButton" onclick="viewSizeChart()">View our Size Chart</button>
+        <button id="sizeChartButton" onclick="viewSizeChart(true)">View our Size Chart</button>
       </div>
     <div id="materialSelection">
-        <select>
+        <select id="materialSelector" onchange="materialAuswahl()">
           <option>Baumwolle</option>
           <option>Polyester</option>
           <option>Elasthan</option>
@@ -48,7 +47,9 @@
     <span id="orange" class="colorField" onclick="changeColor('orange');"></span>
     <span id="purple" class="colorField" onclick="changeColor('purple');"></span>
   </div> 
-    <h2 id="price">You need to pay:</h2>
+    <p id="Ergebnis">Preis:0</p>
+    <button onclick="reset()">Zurücksetzen</button>
+    <button onclick="warenkorbHinzufuegen()">Warenkorb</button>
   </div>
   <div id="preview">
     <div id="previewBox">
@@ -102,6 +103,11 @@
 </svg>
     </div>
   </div>
+  <div>
+<button onclick="WarenkorbLeeren()">Leeren</button>
+<div id="Warenkorb">
+</div>
+</div>
 </body>
 
 <script src="../build/index.js" ></script>

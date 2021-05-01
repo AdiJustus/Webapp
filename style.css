@@ -1,7 +1,42 @@
+/*General style elements*/
+
 body {
   text-align: center;
   background-color: rgb(166, 195, 233);
 }
+
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+select {
+ cursor: pointer;
+  background-color: #69ccd3;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #69ccd3;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/*Style for the clothe choice box*/
 
 .choice {
   margin: 20px;
@@ -23,42 +58,33 @@ body {
   margin-bottom: 30px;
 }
 
-select {
-  cursor: pointer;
-  cursor: pointer;
-  background-color: #69ccd3;
-  box-shadow: var(--box-shadow);
-  color: #fff;
-  border: 0;
-  display: block;
-  font-size: 16px;
-  margin-left: 50px;
-  padding: 10px;
-  float: left;
-}
+/*Style for the selected clothes*/
 
-.svgs {
+.svgPreview {
   margin: 10px;
   max-width: 250px;
   max-height: 250px;
+  width: 100%;
+  height: 100%;
 }
 
-.svgs2 {
-  max-width: 150px;
-  max-height: 150px;
-}
-
-h1 {
-  font-family: "Courier New", monospace;
-  text-align: center;
-}
-
-#previewBox,
-#previewBox2,
-#previewBox3,
-#previewBox4 {
+#previewBox, #previewBox2, #previewBox3, #previewBox4 {
   display: none;
 }
+
+/*Style for the price element*/
+
+#result {
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+
+}
+
+/*Style for the size element*/
+/*Style for the material element*/
+
+/*Style for the size chart function*/
 
 #overlay {
   position: fixed;
@@ -69,7 +95,7 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
   cursor: pointer;
 }
@@ -86,19 +112,15 @@ h1 {
   left: 30px;
 }
 
-button {
-  cursor: pointer;
-  background-color: #69ccd3;
-  box-shadow: var(--box-shadow);
-  color: #fff;
-  border: 0;
-  display: block;
-  font-size: 16px;
-  margin: 0 auto;
-  padding: 10px;
+#shoppingCartButton{
+
+  margin-bottom: 20px;
+
 }
 
-#WarenkorbUndButton {
+/*Style for the shopping cart*/
+
+#shoppingCartWithButton {
   position: fixed;
   width: 300px;
   height: max-content;
@@ -109,20 +131,19 @@ button {
   border-radius: 15px 15px 15px 15px;
 }
 
-#i1,
-#i2,
-#i3,
-#i4 {
-  width: 100%;
-  height: 100%;
-}
-
-#o1,
-#o2,
-#o3,
-#o4 {
+.svgCart {
+  max-width: 150px;
+  max-height: 150px;
   cursor: pointer;
 }
+
+#cartName {
+  color: #69ccd3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/*Style for the color fields*/
 
 .colorField {
   height: 50px;
@@ -150,21 +171,9 @@ button {
   background-color: MediumTurquoise;
 }
 
-#MediumTurquoise:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
-}
-
 #PaleGoldenRod {
   margin: 20px;
   background-color: PaleGoldenRod;
-}
-
-#PaleGoldenRod:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
 }
 
 #LightPink {
@@ -172,21 +181,9 @@ button {
   background-color: LightPink;
 }
 
-#LightPink:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
-}
-
 #Plum {
   margin: 20px;
   background-color: Plum;
-}
-
-#Plum:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
 }
 
 #LightGreen {
@@ -194,19 +191,7 @@ button {
   background-color: LightGreen;
 }
 
-#LightGreen:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
-}
-
 #PowderBlue {
   margin: 20px;
   background-color: PowderBlue;
-}
-
-#PowderBlue:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
 }

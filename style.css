@@ -1,30 +1,9 @@
 .choice {
-
-max-width: 80px;
-max-height: 80px;
+margin: 20px;
+max-width: 100px;
+max-height: 100px;
 cursor: pointer;
 }
-
-#c1:hover {
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-    transition: all 0.2s ease-in-out;
-  }
-  #c2:hover {
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-    transition: all 0.2s ease-in-out;
-  }
-  #c3:hover {
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-    transition: all 0.2s ease-in-out;
-  }
-  #c4:hover {
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-    transition: all 0.2s ease-in-out;
-  }
 
 
 select {
@@ -35,22 +14,29 @@ select {
 
 
 .svgs {
+margin: 10px;
+max-width: 250px;
+max-height: 250px;
 
-max-width: 300px;
-max-height: 300px;
 
+}
+
+.svgs2 {
+
+max-width: 150px;
+max-height: 150px;
 
 }
 
 h1 {
       font-family: 'Courier New', monospace;
       text-align: center;
-      color: white;
-      transform: rotate(-10deg);
+    
+      
   }
-h2 { 
+p { 
       font-family: 'Courier New', monospace;
-      color: white;
+     
   }
 
 #previewBox, #previewBox2, #previewBox3, #previewBox4 {
@@ -59,7 +45,6 @@ h2 {
 
 
 .colorField {
-
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -69,60 +54,56 @@ h2 {
 }
 
 
-button:hover{
-  opacity:1;
-}
-
-#red {
-margin: 10px;
+#navy {
+margin: 20px;
 background-color: navy;
 
 }
 
-#red:hover {
+#navy:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
   transition: all 0.2s ease-in-out;
 }
 
-#blue {
-  margin: 10px;
+#Slategray {
+  margin: 20px;
 background-color: slategray;
   
 }
 
-#blue:hover {
+#Slategray:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
   transition: all 0.2s ease-in-out;
 }
 
-#green {
-  margin: 10px;
+#rebeccapurple {
+  margin: 20px;
 background-color: rebeccapurple;
     
 }
 
-#green:hover {
+#rebeccapuprle:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
   transition: all 0.2s ease-in-out;
 }
 
-#yellow {
-  margin: 10px;
+#Indigo {
+  margin: 20px;
 background-color: Indigo;
       
 }
 
-#yellow:hover {
+#Indigo:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
   transition: all 0.2s ease-in-out;
 }
 
 #orange {
-  margin: 10px;
+  margin: 20px;
 background-color: orange;
         
 }
@@ -134,7 +115,7 @@ background-color: orange;
 }
 
 #purple {
-  margin: 10px;
+  margin: 20px;
 background-color: purple;
         
 }
@@ -175,24 +156,40 @@ html {
 body {
   min-height: 100%;
   position: relative;
-  padding-bottom: 3rem;
-  margin: 0;
-  padding: 0;
   text-align: center;
   width: 100%;
-  background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(126, 106, 98, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(119, 83, 49, 0.8) 45%, rgba(46, 46, 31, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(196, 139, 85, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #74602b;
 }
 
+
 #sizeChartButton{
-  
+  display:none;
   cursor: pointer;
 }
 
-.colorFields {
-  transform: rotate(-10deg);
+button {
+  cursor: pointer;
+}
+
+#WarenkorbUndButton{
+  position: fixed;
+  width: 300px;
+  height: 800px;
+  background-color: rgb(199, 199, 199);
   
 }
 
+#i1, #i2, #i3, #i4 {
 
+  width: 100%;
+  height: 100%;
 
+}
+
+#WarenkorbButton {
+
+  
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+}
 

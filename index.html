@@ -6,7 +6,14 @@
 </head>
 
 <body>
-    
+  <div>
+    <div id="WarenkorbUndButton">
+      <p>Dein Warenkorb</p>
+  <button id="WarenkorbButton" onclick="WarenkorbLeeren()">Leeren</button>
+  <div id="Warenkorb">
+  </div>
+  </div>
+  
     <h1 id="title">Shirt-O-Mat</h1>
   <div id="controls">
     <div id="choices">
@@ -15,7 +22,7 @@
       <img id="c3" class="choice" class="Kleidung" src="../Bilder/hoodie.svg" onclick="ausgabe('Hoodie')">
       <img id="c4" class="choice" class="Kleidung" src="../Bilder/sweater.svg" onclick="ausgabe('Sweater')">
     </div>
-  
+    
     <div id="sizeSelection">
         <select id="sizeSelector" onchange="groesseAuswahl()">
           <option >XS</option>
@@ -26,11 +33,9 @@
           <option >XXL</option>
         </select>
       </div>
-      <div id="overlay" onclick="viewSizeChart(false)">
-      <img id="sizeChart" src="../Bilder/size_chart.jpg">
-      </div>
+      
       <div >
-        <button id="sizeChartButton" onclick="viewSizeChart(true)">View our Size Chart</button>
+        <button id="sizeChartButton" onclick="viewSizeChart(true)">Größentabelle anzeigen</button>
       </div>
     <div id="materialSelection">
         <select id="materialSelector" onchange="materialAuswahl()">
@@ -40,16 +45,16 @@
         </select>
       </div>
     <div class="colorFields"> 
-    <span id="red" class="colorField" onclick="changeColor('navy');"></span>
-    <span id="blue" class="colorField" onclick="changeColor('SlateGray');"></span>
-    <span id="green" class="colorField" onclick="changeColor('rebeccapurple');"></span>
-    <span id="yellow" class="colorField" onclick="changeColor('Indigo');"></span>
+    <span id="navy" class="colorField" onclick="changeColor('navy');"></span>
+    <span id="SlateGray" class="colorField" onclick="changeColor('SlateGray');"></span>
+    <span id="rebeccapurple" class="colorField" onclick="changeColor('rebeccapurple');"></span>
+    <span id="Indigo" class="colorField" onclick="changeColor('Indigo');"></span>
     <span id="orange" class="colorField" onclick="changeColor('orange');"></span>
     <span id="purple" class="colorField" onclick="changeColor('purple');"></span>
   </div> 
-    <p id="Ergebnis">Preis:0</p>
-    <button onclick="reset()">Zurücksetzen</button>
-    <button onclick="warenkorbHinzufuegen()">Warenkorb</button>
+    <p id="Ergebnis">Preis: 0€</p>
+    <button onclick="reset()">Auswahl zurücksetzen</button>
+    <button onclick="warenkorbHinzufuegen()">Zum Warenkorb hinzufügen</button>
   </div>
   <div id="preview">
     <div id="previewBox">
@@ -103,11 +108,7 @@
 </svg>
     </div>
   </div>
-  <div>
-<button onclick="WarenkorbLeeren()">Leeren</button>
-<div id="Warenkorb">
-</div>
-</div>
+  
 </body>
 
 <script src="../build/index.js" ></script>

@@ -1,132 +1,64 @@
-.choice {
-margin: 20px;
-max-width: 100px;
-max-height: 100px;
-cursor: pointer;
+body {
+  text-align: center;
+  background-color: rgb(166, 195, 233);
 }
 
+.choice {
+  margin: 20px;
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
+}
+
+#choices {
+  background-color: rgba(255, 255, 255, 0.815);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 600px;
+  max-height: 200px;
+  box-sizing: border-box;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 30px;
+}
 
 select {
-
   cursor: pointer;
-
+  cursor: pointer;
+  background-color: #69ccd3;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin-left: 50px;
+  padding: 10px;
+  float: left;
 }
 
-
 .svgs {
-margin: 10px;
-max-width: 250px;
-max-height: 250px;
-
-
+  margin: 10px;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 .svgs2 {
-
-max-width: 150px;
-max-height: 150px;
-
+  max-width: 150px;
+  max-height: 150px;
 }
 
 h1 {
-      font-family: 'Courier New', monospace;
-      text-align: center;
-    
-      
-  }
-p { 
-      font-family: 'Courier New', monospace;
-     
-  }
+  font-family: "Courier New", monospace;
+  text-align: center;
+}
 
-
-#previewBox, #previewBox2, #previewBox3, #previewBox4 {
+#previewBox,
+#previewBox2,
+#previewBox3,
+#previewBox4 {
   display: none;
 }
-
-
-.colorField {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  
-}
-
-
-#navy {
-margin: 20px;
-background-color: navy;
-
-}
-
-#navy:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
-}
-
-#SlateGray {
-  margin: 20px;
-background-color: slategray;
-  
-}
-
-#SlateGray:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
-}
-
-#Aqua{
-  margin: 20px;
-background-color: aqua;
-    
-}
-
-#Aqua:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
-}
-
-#Indigo {
-  margin: 20px;
-background-color: Indigo;
-      
-}
-
-#Indigo:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
-}
-
-#orange {
-  margin: 20px;
-background-color: orange;
-        
-}
-
-#orange:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
-}
-
-#purple {
-  margin: 20px;
-background-color: purple;
-        
-}
-
-#purple:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
-  transition: all 0.2s ease-in-out;
-}
-
 
 #overlay {
   position: fixed;
@@ -137,7 +69,7 @@ background-color: purple;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
   cursor: pointer;
 }
@@ -148,51 +80,133 @@ background-color: purple;
   margin-right: auto;
 }
 
-html {
-  height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  min-height: 100%;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-
-
-#sizeChartButton{
-  display:none;
-  cursor: pointer;
+#sizeChartButton {
+  position: absolute;
+  top: 20px;
+  left: 30px;
 }
 
 button {
   cursor: pointer;
+  background-color: #69ccd3;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
-#WarenkorbUndButton{
+#WarenkorbUndButton {
   position: fixed;
   width: 300px;
   height: max-content;
-  background-color: rgb(199, 199, 199);
-  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 0.815);
+  top: 20px;
+  right: 30px;
   box-sizing: border-box;
   border-radius: 15px 15px 15px 15px;
 }
 
-#i1, #i2, #i3, #i4 {
-
+#i1,
+#i2,
+#i3,
+#i4 {
   width: 100%;
   height: 100%;
-
 }
 
-#WarenkorbButton {
-
-  
-  margin-top: 20px;
-  margin-bottom: 40px;
-
+#o1,
+#o2,
+#o3,
+#o4 {
+  cursor: pointer;
 }
 
+.colorField {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.colorFields {
+  background-color: rgba(255, 255, 255, 0.815);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 600px;
+  max-height: 200px;
+  box-sizing: border-box;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 30px;
+}
+
+#MediumTurquoise {
+  margin: 20px;
+  background-color: MediumTurquoise;
+}
+
+#MediumTurquoise:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+#PaleGoldenRod {
+  margin: 20px;
+  background-color: PaleGoldenRod;
+}
+
+#PaleGoldenRod:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+#LightPink {
+  margin: 20px;
+  background-color: LightPink;
+}
+
+#LightPink:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+#Plum {
+  margin: 20px;
+  background-color: Plum;
+}
+
+#Plum:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+#LightGreen {
+  margin: 20px;
+  background-color: LightGreen;
+}
+
+#LightGreen:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+#PowderBlue {
+  margin: 20px;
+  background-color: PowderBlue;
+}
+
+#PowderBlue:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
+  transition: all 0.2s ease-in-out;
+}

@@ -79,13 +79,13 @@ background-color: slategray;
   transition: all 0.2s ease-in-out;
 }
 
-#rebeccapurple {
+#Aqua{
   margin: 20px;
-background-color: rebeccapurple;
+background-color: aqua;
     
 }
 
-#rebeccapuprle:hover {
+#Aqua:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 1px 25px rgba(255, 255, 255, 0.4);
   transition: all 0.2s ease-in-out;

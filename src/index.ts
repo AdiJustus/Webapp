@@ -86,9 +86,9 @@ function output(typeOfClothing: string): void {
 
 function viewSizeChart(enabled: boolean) {
   if (enabled) {
-    document.getElementById("shoppingCartWithButton")!.style.display = "block";
+    document.getElementById("overlay")!.style.display = "block";
   } else {
-    document.getElementById("shoppingCartWithButton")!.style.display = "none";
+    document.getElementById("overlay")!.style.display = "none";
   }
 }
 

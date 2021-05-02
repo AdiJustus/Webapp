@@ -86,9 +86,17 @@ function output(typeOfClothing: string): void {
 
 function viewSizeChart(enabled: boolean) {
   if (enabled) {
-    document.getElementById("overlay")!.style.display = "block";
+    document.getElementById("shoppingCartWithButton")!.style.display = "block";
   } else {
-    document.getElementById("overlay")!.style.display = "none";
+    document.getElementById("shoppingCartWithButton")!.style.display = "none";
+  }
+}
+
+function viewShoppingCart(enabled: boolean) {
+  if (enabled) {
+    document.getElementById("shop")!.style.display = "block";
+  } else {
+    document.getElementById("shop")!.style.display = "none";
   }
 }
 

@@ -5,17 +5,11 @@ export enum clothingTypes {
     Sweater = "Sweater"
 }
 
-export enum clothingPaths {
-
-
-
-}
-
 export enum clothingPreviewBox {
-
-
-
-    
+    tshirtBox = "previewBox",
+    shirtBox = "previewBox2",
+    hoodieBox = "previewBox3",
+    sweaterBox = "previewBox4"
 }
 
 export const prices = {

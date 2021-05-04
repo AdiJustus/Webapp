@@ -144,9 +144,9 @@ function initialize () {
   document.querySelectorAll<HTMLImageElement>(".choice").forEach((el)=> {el.addEventListener("click", output)});  
   shoppingCartButton.onclick = emptyShoppingCart;
   sizeChartButton.onclick = () => viewSizeChart(true);
+  overlay.onclick = () => viewSizeChart(false);
   resetButton.onclick = () => reset();
   addToCartButton.onclick = () => addToShoppingCart();
-  overlay.onclick = () => viewSizeChart(false);
   materialSelector.onchange = () => materialSelection();
   sizeSelector.onchange = () => sizeSelection();
 }

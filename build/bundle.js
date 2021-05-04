@@ -8,6 +8,13 @@
         clothingTypes["Hoodie"] = "Hoodie";
         clothingTypes["Sweater"] = "Sweater";
     })(clothingTypes || (clothingTypes = {}));
+    var clothingPreviewBox;
+    (function (clothingPreviewBox) {
+        clothingPreviewBox["tshirtBox"] = "previewBox";
+        clothingPreviewBox["shirtBox"] = "previewBox2";
+        clothingPreviewBox["hoodieBox"] = "previewBox3";
+        clothingPreviewBox["sweaterBox"] = "previewBox4";
+    })(clothingPreviewBox || (clothingPreviewBox = {}));
     const prices = {
         [clothingTypes.TShirt]: 20,
         [clothingTypes.Shirt]: 30,

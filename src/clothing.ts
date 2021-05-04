@@ -4,6 +4,20 @@ export enum clothingTypes {
     Hoodie = "Hoodie",
     Sweater = "Sweater"
 }
+
+export enum clothingPaths {
+
+
+
+}
+
+export enum clothingPreviewBox {
+
+
+
+    
+}
+
 export const prices = {
 [clothingTypes.TShirt]:20,
 [clothingTypes.Shirt]:30,

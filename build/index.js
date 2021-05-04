@@ -1,12 +1,4 @@
-"use strict";
-let previewBox = document.getElementById("previewBox");
-let price = document.getElementById("result");
-const clothing = document.getElementsByClassName("clothing");
-const size = document.getElementsByClassName("sizeSelection");
-const colorFields = document.querySelectorAll(".colorField");
-const shoppingCartList = document.getElementById("shoppingCart");
-const sizeSelector = document.getElementById("sizeSelector");
-const materialSelector = document.getElementById("materialSelector");
+import { sizeSelector, materialSelector, price, shoppingCartList } from "./dom-utils";
 let chosenClothing;
 const priceClothing = [10, 15, 20, 30, 40, 50];
 const priceSize = [1, 2, 3, 4, 5, 6];

@@ -1,4 +1,4 @@
-export let price = document.getElementById("result");
+export let previewPrice = document.getElementById("previewPrice");
 export const clothing = document.getElementsByClassName("clothing");
 export const size = document.getElementsByClassName("sizeSelection");
 export const colorFields = (document.querySelectorAll(".colorField") as unknown) as Array<HTMLElement>;

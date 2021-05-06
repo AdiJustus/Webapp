@@ -160,10 +160,6 @@ font-size: 20px;
   cursor: pointer;
 }
 
-/*#shop {
-  display:none;
-}*/
-
 #shoppingCartWithButton {
   position: fixed;
   width: 300px;
@@ -215,6 +211,8 @@ font-size: 20px;
   border-radius: 15px 15px 15px 15px;
   margin-bottom: 5px;
 }
+
+/*Color for the color fields*/
 
 #MediumTurquoise {
   margin: 20px;

@@ -156,22 +156,31 @@ function addToShoppingCart() {
   shoppingCartList!.appendChild(shoppingCartItemBox);
 }
 
+//Function to remove items from the shopping cart
+
 function emptyShoppingCart() {
   while (shoppingCartList!.firstChild) {
     shoppingCartList!.firstChild.remove();
   }
 }
 
+//Initialize function
+
 function initialize () {
   document.querySelectorAll<HTMLSpanElement>(".colorField").forEach((el)=> {el.addEventListener("click", function(){changeColor(el.id);});});
   document.querySelectorAll<HTMLImageElement>(".choice").forEach((el)=> {el.addEventListener("click", output)});  
-  shoppingCartButton.onclick = emptyShoppingCart;
+  
   sizeChartButton.onclick = () => viewSizeChart(true);
   overlay.onclick = () => viewSizeChart(false);
-  resetButton.onclick = () => reset();
+
   addToCartButton.onclick = () => addToShoppingCart();
+  shoppingCartButton.onclick = emptyShoppingCart;
+  
   materialSelector.onchange = () => materialSelection();
   sizeSelector.onchange = () => sizeSelection();
+
+  resetButton.onclick = () => reset();
+  
 }
 
 initialize();

@@ -15,6 +15,13 @@
         clothingPreviewBox["hoodieBox"] = "previewBox3";
         clothingPreviewBox["sweaterBox"] = "previewBox4";
     })(clothingPreviewBox || (clothingPreviewBox = {}));
+    var clothingPaths;
+    (function (clothingPaths) {
+        clothingPaths["tshirtPath"] = "inlinePath";
+        clothingPaths["shirtPath"] = "inlinePath2";
+        clothingPaths["hoodiePath"] = "inlinePath3";
+        clothingPaths["sweaterPath"] = "inlinePath4";
+    })(clothingPaths || (clothingPaths = {}));
     const pricesClothing = {
         [clothingTypes.TShirt]: 10,
         [clothingTypes.Shirt]: 20,
@@ -29,6 +36,10 @@
     const shirtBox = document.querySelector(`#${clothingPreviewBox.shirtBox}`);
     const hoodieBox = document.querySelector(`#${clothingPreviewBox.hoodieBox}`);
     const sweaterBox = document.querySelector(`#${clothingPreviewBox.sweaterBox}`);
+    const tshirtPath = document.querySelector(`#${clothingPaths.tshirtPath}`);
+    const shirtPath = document.querySelector(`#${clothingPaths.shirtPath}`);
+    const hoodiePath = document.querySelector(`#${clothingPaths.hoodiePath}`);
+    const sweaterPath = document.querySelector(`#${clothingPaths.sweaterPath}`);
     function getSVG(type, color) {
         switch (type) {
             case clothingTypes.TShirt:
@@ -101,20 +112,16 @@
         color = e;
         switch (clothes) {
             case clothingTypes.TShirt:
-                const tshirt = document.querySelector("#inlinePath");
-                tshirt.setAttribute("fill", color);
+                tshirtPath.setAttribute("fill", color);
                 break;
             case clothingTypes.Shirt:
-                const shirt = document.querySelector("#inlinePath2");
-                shirt.setAttribute("fill", color);
+                shirtPath.setAttribute("fill", color);
                 break;
             case clothingTypes.Hoodie:
-                const hoodie = document.querySelector("#inlinePath3");
-                hoodie.setAttribute("fill", color);
+                hoodiePath.setAttribute("fill", color);
                 break;
             case clothingTypes.Sweater:
-                const sweater = document.querySelector("#inlinePath4");
-                sweater.setAttribute("fill", color);
+                sweaterPath.setAttribute("fill", color);
                 break;
         }
     }
@@ -182,6 +189,8 @@
         while (shoppingCartList.firstChild) {
             shoppingCartList.firstChild.remove();
         }
+        totalPrice = 0;
+        totalPriceText.innerHTML = "Total price: " + totalPrice + "€";
     }
     //Initialize function
     function initialize() {

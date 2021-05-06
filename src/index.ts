@@ -1,4 +1,4 @@
-import { clothingTypes, priceTShirt, priceShirt, priceHoodie, priceSweater, tshirtBox, shirtBox, hoodieBox, sweaterBox, getSVG } from "./clothing";
+import { clothingTypes, priceTShirt, priceShirt, priceHoodie, priceSweater, tshirtBox, shirtBox, hoodieBox, sweaterBox, getSVG, tshirtPath, shirtPath, hoodiePath, sweaterPath } from "./clothing";
 import { sizeSelector, materialSelector, previewPrice, shoppingCartList, shoppingCartButton, sizeChartButton, resetButton, addToCartButton, overlay, totalPriceText } from "./dom-utils";
 
 
@@ -63,23 +63,19 @@ function changeColor(e: string) {
    switch (clothes) {
  
      case clothingTypes.TShirt:
-      const tshirt = document.querySelector("#inlinePath") as SVGElement;
-      tshirt!.setAttribute("fill", color);
+      tshirtPath!.setAttribute("fill", color);
       break;
  
      case clothingTypes.Shirt:
-      const shirt = document.querySelector("#inlinePath2") as SVGElement;
-      shirt!.setAttribute("fill", color);
+      shirtPath!.setAttribute("fill", color);
       break;
  
      case clothingTypes.Hoodie:
-      const hoodie = document.querySelector("#inlinePath3") as SVGElement;
-      hoodie!.setAttribute("fill", color);
+      hoodiePath!.setAttribute("fill", color);
       break;
  
      case clothingTypes.Sweater:
-      const sweater = document.querySelector("#inlinePath4") as SVGElement;
-      sweater!.setAttribute("fill", color);
+      sweaterPath!.setAttribute("fill", color);
       break;
    }
  }
@@ -168,6 +164,8 @@ function emptyShoppingCart() {
   while (shoppingCartList!.firstChild) {
     shoppingCartList!.firstChild.remove();
   }
+  totalPrice = 0;
+  totalPriceText!.innerHTML = "Total price: " + totalPrice + "€";
 }
 
 //Initialize function

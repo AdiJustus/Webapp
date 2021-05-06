@@ -12,6 +12,13 @@ export enum clothingPreviewBox {
     sweaterBox = "previewBox4"
 }
 
+export enum clothingPaths {
+    tshirtPath = "inlinePath",
+    shirtPath = "inlinePath2",
+    hoodiePath = "inlinePath3",
+    sweaterPath = "inlinePath4"
+}
+
 export const pricesClothing = {
 [clothingTypes.TShirt]:10,
 [clothingTypes.Shirt]:20,
@@ -28,6 +35,11 @@ export const tshirtBox = document.querySelector(`#${clothingPreviewBox.tshirtBox
 export const shirtBox = document.querySelector(`#${clothingPreviewBox.shirtBox}`) as HTMLElement;
 export const hoodieBox = document.querySelector(`#${clothingPreviewBox.hoodieBox}`) as HTMLElement;
 export const sweaterBox = document.querySelector(`#${clothingPreviewBox.sweaterBox}`) as HTMLElement;
+
+export const tshirtPath = document.querySelector(`#${clothingPaths.tshirtPath}`) as SVGElement;
+export const shirtPath = document.querySelector(`#${clothingPaths.shirtPath}`) as SVGElement;
+export const hoodiePath= document.querySelector(`#${clothingPaths.hoodiePath}`) as SVGElement;
+export const sweaterPath = document.querySelector(`#${clothingPaths.sweaterPath}`) as SVGElement;
 
 export function getSVG(type: clothingTypes, color: string): string {
     switch (type) {

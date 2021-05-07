@@ -19,6 +19,8 @@ export enum clothingPaths {
     sweaterPath = "inlinePath4"
 }
 
+// prices for the clothes
+
 export const pricesClothing = {
 [clothingTypes.TShirt]:10,
 [clothingTypes.Shirt]:20,
@@ -31,6 +33,8 @@ export const priceShirt = pricesClothing[clothingTypes.Shirt];
 export const priceHoodie = pricesClothing[clothingTypes.Hoodie];
 export const priceSweater = pricesClothing[clothingTypes.Sweater];
 
+//
+
 export const tshirtBox = document.querySelector(`#${clothingPreviewBox.tshirtBox}`) as HTMLElement;
 export const shirtBox = document.querySelector(`#${clothingPreviewBox.shirtBox}`) as HTMLElement;
 export const hoodieBox = document.querySelector(`#${clothingPreviewBox.hoodieBox}`) as HTMLElement;
@@ -40,6 +44,8 @@ export const tshirtPath = document.querySelector(`#${clothingPaths.tshirtPath}`)
 export const shirtPath = document.querySelector(`#${clothingPaths.shirtPath}`) as SVGElement;
 export const hoodiePath= document.querySelector(`#${clothingPaths.hoodiePath}`) as SVGElement;
 export const sweaterPath = document.querySelector(`#${clothingPaths.sweaterPath}`) as SVGElement;
+
+//function to how SVG-images in the shopping cart
 
 export function getSVG(type: clothingTypes, color: string): string {
     switch (type) {

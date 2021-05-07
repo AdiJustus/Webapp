@@ -33,7 +33,10 @@ export const priceShirt = pricesClothing[clothingTypes.Shirt];
 export const priceHoodie = pricesClothing[clothingTypes.Hoodie];
 export const priceSweater = pricesClothing[clothingTypes.Sweater];
 
-//
+
+export const priceSize: number[] = [1, 2, 3, 4, 5, 6];
+
+export const priceMaterial: number[] = [15, 10, 5];
 
 export const tshirtBox = document.querySelector(`#${clothingPreviewBox.tshirtBox}`) as HTMLElement;
 export const shirtBox = document.querySelector(`#${clothingPreviewBox.shirtBox}`) as HTMLElement;

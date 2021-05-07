@@ -22,6 +22,7 @@
         clothingPaths["hoodiePath"] = "inlinePath3";
         clothingPaths["sweaterPath"] = "inlinePath4";
     })(clothingPaths || (clothingPaths = {}));
+    // prices for the clothes
     const pricesClothing = {
         [clothingTypes.TShirt]: 10,
         [clothingTypes.Shirt]: 20,
@@ -32,6 +33,8 @@
     const priceShirt = pricesClothing[clothingTypes.Shirt];
     const priceHoodie = pricesClothing[clothingTypes.Hoodie];
     const priceSweater = pricesClothing[clothingTypes.Sweater];
+    const priceSize = [1, 2, 3, 4, 5, 6];
+    const priceMaterial = [15, 10, 5];
     const tshirtBox = document.querySelector(`#${clothingPreviewBox.tshirtBox}`);
     const shirtBox = document.querySelector(`#${clothingPreviewBox.shirtBox}`);
     const hoodieBox = document.querySelector(`#${clothingPreviewBox.hoodieBox}`);
@@ -40,6 +43,7 @@
     const shirtPath = document.querySelector(`#${clothingPaths.shirtPath}`);
     const hoodiePath = document.querySelector(`#${clothingPaths.hoodiePath}`);
     const sweaterPath = document.querySelector(`#${clothingPaths.sweaterPath}`);
+    //function to how SVG-images in the shopping cart
     function getSVG(type, color) {
         switch (type) {
             case clothingTypes.TShirt:
@@ -65,8 +69,6 @@
     const addToCartButton = document.getElementById("addToCart");
     const overlay = document.getElementById("overlay");
 
-    const priceSize = [0, 0, 0, 5, 5, 10];
-    const priceMaterial = [15, 10, 5];
     let totalPrice = 0;
     let lastPrice = 0;
     let chosenClothing;

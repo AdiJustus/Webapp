@@ -1,9 +1,5 @@
-import { clothingTypes, priceTShirt, priceShirt, priceHoodie, priceSweater, tshirtBox, shirtBox, hoodieBox, sweaterBox, getSVG, tshirtPath, shirtPath, hoodiePath, sweaterPath } from "./clothing";
+import { clothingTypes, priceTShirt, priceShirt, priceHoodie, priceSweater, tshirtBox, shirtBox, hoodieBox, sweaterBox, getSVG, tshirtPath, shirtPath, hoodiePath, sweaterPath, priceSize, priceMaterial } from "./clothing";
 import { sizeSelector, materialSelector, previewPrice, shoppingCartList, shoppingCartButton, sizeChartButton, resetButton, addToCartButton, overlay, totalPriceText } from "./dom-utils";
-
-
-const priceSize: number[] = [1, 2, 3, 4, 5, 6];
-const priceMaterial: number[] = [15, 10, 5];
 
 let totalPrice: number = 0;
 let lastPrice: number = 0;

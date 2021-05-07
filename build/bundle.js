@@ -80,22 +80,18 @@
         changeColor("black");
         switch (typeOfClothing) {
             case clothingTypes.TShirt:
-                hideElements();
                 tshirtBox.style.display = "inline";
                 chosenClothing = priceTShirt;
                 break;
             case clothingTypes.Shirt:
-                hideElements();
                 shirtBox.style.display = "inline";
                 chosenClothing = priceShirt;
                 break;
             case clothingTypes.Hoodie:
-                hideElements();
                 hoodieBox.style.display = "inline";
                 chosenClothing = priceHoodie;
                 break;
             case clothingTypes.Sweater:
-                hideElements();
                 sweaterBox.style.display = "inline";
                 chosenClothing = priceSweater;
                 break;
@@ -150,7 +146,7 @@
         sizeSelector.selectedIndex = 0;
         materialSelector.selectedIndex = 0;
         hideElements();
-        previewPrice.innerHTML = "Preis: 0€";
+        previewPrice.innerHTML = "Price: 0€";
         lastPrice = 0;
     }
     function addToShoppingCart() {

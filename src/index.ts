@@ -2,7 +2,7 @@ import { clothingTypes, priceTShirt, priceShirt, priceHoodie, priceSweater, tshi
 import { sizeSelector, materialSelector, previewPrice, shoppingCartList, shoppingCartButton, sizeChartButton, resetButton, addToCartButton, overlay, totalPriceText } from "./dom-utils";
 
 
-const priceSize: number[] = [0, 0, 0, 5, 5, 10];
+const priceSize: number[] = [1, 2, 3, 4, 5, 6];
 const priceMaterial: number[] = [15, 10, 5];
 
 let totalPrice: number = 0;
@@ -23,25 +23,21 @@ function output(e: UIEvent): void {
   switch (typeOfClothing)  {
 
     case clothingTypes.TShirt:
-      hideElements();
       tshirtBox.style.display = "inline";
       chosenClothing = priceTShirt;
       break;
 
     case clothingTypes.Shirt:
-      hideElements();
       shirtBox.style.display = "inline";
       chosenClothing = priceShirt;
       break;
 
     case clothingTypes.Hoodie:
-      hideElements();
       hoodieBox.style.display = "inline";
       chosenClothing = priceHoodie;
       break;
 
     case clothingTypes.Sweater:
-      hideElements();
       sweaterBox.style.display = "inline";
       chosenClothing = priceSweater;
       break;
@@ -112,7 +108,7 @@ function reset() {
   sizeSelector.selectedIndex = 0;
   materialSelector.selectedIndex = 0;
   hideElements();
-  previewPrice!.innerHTML = "Preis: 0€";
+  previewPrice!.innerHTML = "Price: 0€";
   lastPrice = 0;
 }
 

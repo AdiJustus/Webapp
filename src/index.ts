@@ -133,6 +133,7 @@ function addToShoppingCart() {
   updatePriceText(lastPrice);
 
   //set tooltip
+
   shoppingCartItemBox!.setAttribute("title", "Price: " + lastPrice + "€");  
   shoppingCartItemBox!.setAttribute("price", String(lastPrice));
   shoppingCartItemBox!.addEventListener("click", function () {
